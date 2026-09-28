@@ -1,9 +1,21 @@
 pipeline {
     agent any
     stages {
+        stage('Build') {
+            steps {
+                bat 'echo "building application" '
+                bat 'set'
+            }
+        }
         stage('Test') {
             steps {
-                bat 'echo "Fail!"; exit 1'
+                bat 'echo "running tests" '
+                bat 'echo "tests passed" '
+            }
+        }
+        stage('Test') {
+            steps {
+                bat 'echo "delivering application" '
             }
         }
     }
