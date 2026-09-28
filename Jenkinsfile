@@ -13,7 +13,7 @@ pipeline {
                 bat 'echo "tests passed" '
             }
         }
-        stage('Test') {
+        stage('Deliver') {
             steps {
                 bat 'echo "delivering application" '
             }
